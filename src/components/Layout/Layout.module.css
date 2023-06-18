@@ -1,0 +1,16 @@
+.header{
+    padding: 32px;
+    background-color: #3B5249;
+}
+
+.navLink{
+    font-size: 24px;
+    margin-left: 32px;
+    color: #fff;
+
+    &:hover{
+        color: orange
+
+    }
+    &:
+}
