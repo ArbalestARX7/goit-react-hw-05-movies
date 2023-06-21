@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import css from './ActorCard.module.css';
+
 const ActorCard = ({ actor }) => {
   const { profile_path, name, character } = actor;
 
@@ -9,10 +12,12 @@ const ActorCard = ({ actor }) => {
   return (
     <li>
       <img src={profile_path ? imgUrl : defaultImg} alt={name} width="200px" />
-      <p>{name}</p>
-      <p>{character}</p>
+      <p className={css.actorsInform}>{name}</p>
+      <p className={css.actorsInform}>{character}</p>
     </li>
   );
 };
 
 export default ActorCard;
+
+ActorCard.protoTypes = { actor: PropTypes.object.isRequired };

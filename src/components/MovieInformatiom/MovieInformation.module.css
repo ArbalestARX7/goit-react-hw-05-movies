@@ -2,3 +2,22 @@
 .MovieDesc{
     display: flex;
 }
+
+.inform{
+    margin-left: 32px;
+}
+
+.movieTitle{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.movieAbout{
+    margin-bottom: 10px;
+    max-width: 700px;
+}
+
+.movieAbotDesc{
+    font-weight: bold;
+    margin-right: 10px;
+}

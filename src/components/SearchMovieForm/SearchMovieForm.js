@@ -1,38 +1,27 @@
-import { useState } from 'react';
+import css from './SearchMovieForm.module.css';
+import PropTypes from 'prop-types';
 
-const SearchMovieForm = ({ onSearch }) => {
-  const [querry, setQuerry] = useState('');
-
-  const searchButtomHandler = evt => {
-    evt.preventDefault();
-
-    if (querry.trim() === '') {
-      alert('Type smthng');
-    }
-
-    onSearch(querry);
-  };
-
-  const inputHandler = e => {
-    setQuerry(e.target.value);
-  };
-
+const SearchMovieForm = ({ onSubmit }) => {
   return (
-    <form>
-      <button type="submit" onClick={searchButtomHandler}>
-        <span>Search</span>
+    <form className={css.searchForm} onSubmit={onSubmit}>
+      <button className={css.serchButton} type="submit">
+        Search
       </button>
 
       <input
+        name="querry"
         type="text"
         autoComplete="off"
         autoFocus
         placeholder="Search Films"
-        onChange={inputHandler}
-        value={querry}
+        className={css.searchInput}
       />
     </form>
   );
 };
 
 export default SearchMovieForm;
+
+SearchMovieForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

@@ -1,0 +1,30 @@
+.searchForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+
+.serchButton{
+background-color: #3B5249;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+
+
+&:hover{
+    color: orange;
+}
+}
+
+.searchInput{
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+
+    &:focus{
+        outline: 1px solid #3B5249;
+    }
+}

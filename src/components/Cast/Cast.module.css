@@ -3,4 +3,26 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    margin-top: 32px;
+    
+    
+}
+
+.showMoreBtn{
+    height: 300px;
+    width: 200px;
+    border: none;
+   font-size: 24px;
+   background-color: #3B5249;
+   color: #fff;
+
+   &:hover{
+    color: orange;
+   }
+}
+
+.oops{
+  font-size: 24px;
+  font-weight: bold;  
+  margin-top: 10px;
 }

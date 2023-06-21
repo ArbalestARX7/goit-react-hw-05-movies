@@ -1,6 +1,8 @@
+import { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import css from './Layout.module.css';
 import styled from 'styled-components';
+import { Puff } from 'react-loader-spinner';
 
 const StyledLink = styled(NavLink)`
   &.active {
@@ -24,7 +26,11 @@ const Layout = () => {
         </nav>
       </header>
       <main>
-        <Outlet />
+        <Suspense
+          fallback={<Puff color="#3B5249" wrapperClass="spiner"></Puff>}
+        >
+          <Outlet />
+        </Suspense>
       </main>
     </>
   );

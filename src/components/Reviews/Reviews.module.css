@@ -1,0 +1,23 @@
+
+.reviewItem{
+    border-top: 1px solid black;
+    padding: 10px 0;
+    display: flex;
+    
+}
+
+.author{
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.oops {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}

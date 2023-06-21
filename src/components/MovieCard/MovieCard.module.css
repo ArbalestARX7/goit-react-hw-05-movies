@@ -1,9 +1,17 @@
 .movieCard {
     flex-basis: 20%;
-    border: 1px solid #000;
     transition: transform linear 150ms;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
+}
+
+.movieTitle{
+    min-height: 75px;
+    border: 1px solid rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
